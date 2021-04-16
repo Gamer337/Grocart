@@ -1,0 +1,65 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeFile="Site.Master.vb" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server" style="top: 0%">
+    <div class="page" style="position: absolute; width: 100%; top: 0%">
+        <div class="header" 
+            style="top: -2147483648%; background-color: #00CE00; left: 0px;">
+            <div class="title" 
+                
+                
+                style="font-size: xx-large; position: absolute; left: -18px; top: -2px; height:80px">
+                
+                 
+            </div>
+            <div class="loginDisplay" 
+                style="height: 53px; width: 68%; background-color: #00CE00;">
+               
+                <asp:Label ID="Label1" runat="server" Text="GroCart " CssClass="clear" 
+                        Font-Bold="True" Font-Size="XX-Large"></asp:Label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                 <asp:Label ID="Label2" runat="server" Text="The Online Grossary Shop " 
+                        CssClass="clear" Font-Names="Script MT Bold" ForeColor="#FFCC00" 
+                    Font-Size="XX-Large"></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem Text="Edit Profile" Value="Order Returns" 
+                            NavigateUrl="~/pedit.aspx">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Order Status" Value="Order Status" 
+                            NavigateUrl="~/orderstatus.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Contact US" Value="Contact US" 
+                            NavigateUrl="~/Default6.aspx">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/cart.aspx" Text="Cart" Value="Cart">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear" style="font-size: 8pt; font-weight: bold;" align="center">
+                &nbsp;&nbsp;&nbsp;&nbsp;Developed By: hero Standards, Maintained By Bhai Bandhus, Copyright        
+          </div>
+    </div>
+    <div class="footer">
+                
+    </div>
+    </form>
+</body>
+</html>
