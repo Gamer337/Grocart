@@ -1,1 +1,1 @@
-
+#It’s an e-commerce website whose objective was to sell grocery items online. It was more efficient in comparison to the traditional system. The website consists of different modules from customer register/login to supplier, order product and, also generating sales report. During this project learned about various AJAX controls and connecting DB with ASP.Net.
